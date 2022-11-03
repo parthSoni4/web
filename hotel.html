@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KE Hall</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            display: flex;
+        }
+        nav{
+            margin: 0px;
+            background-color: aquamarine;
+            font:  italic;
+            height: 30%;
+        }
+        .navbar{
+            padding: 0px;
+        }
+        ul{
+            width: 6%;
+            justify-content: center;
+            align-content: center;
+            padding: auto;
+            height: 25%;
+        }
+        ul:hover{
+            background-color: white;
+            color: aquamarine;
+
+        }
+        .background{
+            display: flex;
+            background-color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            flex-direction: column;
+        }
+        .sub{
+            width: 80%;
+            height: 70%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+            margin: auto;
+        }
+        .back{
+            width: 70%;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 22px;
+        }
+        a:hover{
+            color:aquamarine
+        }
+        .pictures{
+            display: flex;
+            justify-content: center;
+        }
+        img{
+
+            margin: 20px;
+
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+        }
+        .appointment{
+            display: flex;
+            /* border: 2px solid red; */
+            justify-content: center;
+            background-color: aliceblue;
+            
+        }
+
+        form{
+            /* border: 2px solid yellow; */
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 1px 1px 27px 2px grey;
+            background-color: white;
+            margin-bottom: 40px;
+        }
+        table{
+            padding: 10px;
+            font-size: 24px;
+            border: 2px solid grey;
+        }
+        input{
+            margin: 10px;
+        }
+        .chart{
+            display: flex;
+            justify-content: center;
+            margin: 30px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <section class="navbar">
+        <nav>
+
+            <div>
+                <li>
+                    <ul>
+                        <a href="#">Home</a>
+                        
+                    </ul>
+                    <ul>
+                        <a href="#">About us</a>
+                    </ul>
+                    <ul>
+                        <a href="">Contact</a>
+                    </ul>
+                    
+                </li>
+            </div>
+        </nav>
+    </section>
+
+    <section class="background">
+        <section class="sub">
+            <img src="./40942567.jpg" alt="" class="back">
+        </section>
+
+        <h2>
+            HomeLand Hostel
+        </h2>
+
+
+    
+    </section>
+
+
+    <main>
+        <h2 style="text-align:center ;">hostel pic</h3>
+
+        <section class="pictures">
+            <div>
+                <img src="./download (5).jpeg" alt="">
+            </div>
+            <div>
+                <img src="./download (4).jpeg" alt="">
+            </div>
+            <div>
+                <img src="./download (3).jpeg" alt="">
+            </div>
+            <div>
+                <img src="./download (2).jpeg" alt="">
+            </div>
+        </section>
+
+
+
+        <section class="appointment">
+            <section class="form">
+                <h2>
+                    Appointment
+                </h2>
+                <form action="">
+                    <div>
+
+                        Enter your name
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        Enter your email
+                        <input type="email">
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
+
+            </section>
+        </section>
+
+        <section class="chart">
+            <h2>
+                Cost chart
+            </h2>
+            <table>
+                <tr>
+                    <th>
+                        Sharing type
+                    </th>
+                    <th>
+                        Cost
+                    </th>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        three sharing
+                    </td>
+                    <td>
+                        45,000 Rs
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        two Sharing
+                    </td>
+                    <td>
+                        55,000 Rs
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>
+                        Special Single
+                    </td>
+                    <td>
+                        75,000 RS
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>
