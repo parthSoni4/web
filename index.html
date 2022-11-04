@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .main{
+            background-image: url("./back2.jpeg");
+            width: 100vw;
+            height: 80vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-size: cover;
+        }
+        nav{
+            /* height: 100px; */
+            background-color: white;
+            height: 10% ;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            margin: 4px;
+            padding: 5px;
+            /* border: 2px solid black; */
+            margin: auto;
+        }
+        .location{
+            margin-top: 10%;
+            margin-bottom: 7%;
+        }
+        .logo{
+            height: 3.2rem;
+        }
+        #box-location{
+            display: flex;
+            justify-content:space-around;
+        }
+        .loc{
+            padding: 0.8rem;
+            margin: 0.7rem;
+            width: 20%;
+            height: 70vh;
+            box-shadow: 1px 1px 7px 1px grey;
+            padding-bottom: 1.8rem;
+        }
+        .loc:hover{
+            box-shadow: 1.4px 1.4px 8px 1px grey;
+
+        }
+        .loc img{
+            width: 100%;
+            margin: auto;
+            height: 80%;
+        }
+        h2,h1{
+            text-align: center;
+        }
+        .view-more{
+            background-color: #d29751;
+            border: 2px solid white;
+            color: white;
+            border-radius: 5px;
+            padding: 0.4rem;
+            font-size: large;
+            
+        }
+
+        .offer{
+            padding-top: 3%;
+        }
+        #offer-division{
+            /* border: 2px solid red; */
+            /* margin-bo: 30px; */
+            display: flex;
+            padding: 0.5rem;
+            background-color: #fafafa;
+        }
+        #offer-division h2{
+            text-align: center;
+            color: #d29751;
+            /* border: 2px solid yellow; */
+            font-size: 2rem;
+        }
+        .offer-description{
+            margin: 0.9rem;
+            font-size: 1.5rem;
+            padding: 1rem;
+        }
+        .offer-description li {
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><img src="./logo.png" class="logo"alt=""></li>
+            <li><a href="#">Our hotels</a></li>
+            <li><a href="#">Dining</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Gift cards</a></li>
+            <li><a href="#">Taj holidays</a></li>
+            <li><a href="#">Manage booking</a></li>
+            <li><a href="#">Sign in </a></li>
+        </ul>
+    </nav>
+    <section class="main">
+
+        
+
+    </section>
+    <section class="location">
+        <h2>Our popular location</h2>
+        <section id="box-location">
+
+            <div class="loc">
+                <img src="./udaipur.jpg" alt="" usemap="#udaipur">
+                <map name="udaipur">
+                    <area shape="rect" coords="34,44,270,350" href="https://en.wikipedia.org/wiki/Udaipur" alt="">
+                </map>
+                <h3>Udaipur</h3>
+                <button class="view-more"> view more</button>
+            </div>
+            <div class="loc">
+                <img src="./goa.jpg" alt="">
+                <h3>Goa</h3>
+                <button class="view-more"> view more</button>
+
+            </div>
+            <div class="loc">
+                <img src="./mumbai.jpg" alt="">
+                <h3>Mumbai</h3>
+                <button class="view-more"> view more</button>
+
+            </div>
+            <div class="loc">
+                <img src="./mathura.jpg" alt="">
+                <h3>Mathura</h3>
+                <button class="view-more"> view more</button>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="offer">
+        <h2>
+            OFFER AND PROMOTIONS
+        </h2>
+        <section id="offer-division">
+            <div>
+
+                <img src="./offer.jpeg" alt="" class="offer">
+            </div>
+            <div class="offer-description">
+
+                <h2>
+                    Member Exclusive offer
+                </h2>
+                
+                <ol>
+                    <li>Urban gateway</li>
+                    <li>Suite surprises</li>
+                    <li>4D offer</li>
+                    <li>Taj holidays</li>
+                    <li>Innergise</li>
+                </ol>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="stay-away">
+        <h2>
+            Take your stay furthur away
+        </h2>
+        <p>
+            
+        </p>
+    </section>
+
+</body>
+</html>
