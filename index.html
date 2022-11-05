@@ -82,6 +82,7 @@
         .offer{
             padding-top: 3%;
         }
+
         #offer-division{
             /* border: 2px solid red; */
             /* margin-bo: 30px; */
@@ -95,6 +96,11 @@
             /* border: 2px solid yellow; */
             font-size: 2rem;
         }
+        h2{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.9em;
+        }
         .offer-description{
             margin: 0.9rem;
             font-size: 1.5rem;
@@ -102,6 +108,34 @@
         }
         .offer-description li {
             padding: 1rem;
+        }
+        table{
+            /* border: 2px solid yellow */
+        }
+        tr{
+            /* border: 2px solid orange; */
+            display: flex;
+            justify-content: center;
+            margin: 0.7rem;
+            /* justify-content: space-between; */
+        }
+        td{
+            /* border: 2px solid black; */
+            /* display: flex; */
+            /* flex: row; */
+            justify-content: center;
+            width: 45vw;
+            align-content: center;
+            margin: auto;
+            margin: 0.5rem;
+        }
+        table img{
+            width: 80%;
+            height: 40vh;
+            margin: auto;
+            padding: 0.4rem;
+            
+            
         }
     </style>
 </head>
@@ -184,13 +218,28 @@
     </section>
 
 
-    <section id="stay-away">
+    <section id="stay-away" style="margin-top: 10%;">
         <h2>
             Take your stay furthur away
         </h2>
-        <p>
-            
+        <p style="text-align: center;">
+            Explore different places with different people
         </p>
+        <table>
+            <tr>
+                <td colspan="2" style="display:flex; justify-content:center; ">
+                    <img src="./tb2.webp" alt="" class="t1">
+                </td>
+            </tr>
+            <tr>
+                <td style="display:flex; justify-content:center; ">
+                    <img class="t2" src="./tb1.webp" alt="">
+                </td>
+                <td style="display:flex; justify-content:center; ">
+                    <img src="./tb3.webp" alt="" class="t3">
+                </td>
+            </tr>
+        </table>
     </section>
 
 </body>
