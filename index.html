@@ -9,6 +9,8 @@
         body{
             padding: 0;
             margin: 0;
+            font-family: sans-serif;
+            /* font-style: italic; */
         }
         .main{
             background-image: url("./back2.jpeg");
@@ -22,6 +24,7 @@
             /* height: 100px; */
             background-color: white;
             height: 10% ;
+            font-style: italic;
             
         }
         a{
@@ -38,7 +41,7 @@
             /* border: 2px solid black; */
             margin: auto;
         }
-        .location{
+        #location{
             margin-top: 10%;
             margin-bottom: 7%;
         }
@@ -137,28 +140,46 @@
             
             
         }
+        .video, .audio, .canvas{
+            height: 30%;
+            /* width: 30%; */
+            margin: 4.4rem;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+        }
+        #canvas{
+            border: 2px solid black;
+        }
+        .canvas{
+            /* height: 50%; */
+
+            /* border: 2px solid pink;  */
+        }
     </style>
 </head>
 <body>
 
     <nav>
         <ul>
-            <li><img src="./logo.png" class="logo"alt=""></li>
+            <li><a href="./index.html"><img src="./logo.png" class="logo"alt=""></a></li>
             <li><a href="#">Our hotels</a></li>
             <li><a href="#">Dining</a></li>
             <li><a href="#">Weddings</a></li>
             <li><a href="#">Gift cards</a></li>
             <li><a href="#">Taj holidays</a></li>
             <li><a href="#">Manage booking</a></li>
-            <li><a href="#">Sign in </a></li>
+            <li><a href="#location">Our destination</a></li>
+            <li><a href="./sign.html" target="_blank">Sign in </a></li>
         </ul>
     </nav>
     <section class="main">
 
+
         
 
     </section>
-    <section class="location">
+    <section id="location">
         <h2>Our popular location</h2>
         <section id="box-location">
 
@@ -218,7 +239,7 @@
     </section>
 
 
-    <section id="stay-away" style="margin-top: 10%;">
+    <!-- <section id="stay-away" style="margin-top: 10%;">
         <h2>
             Take your stay furthur away
         </h2>
@@ -240,7 +261,55 @@
                 </td>
             </tr>
         </table>
+    </section> -->
+
+
+    <section class="video">
+        <video width="320" height="240" controls>
+            <source src="https://www.youtube.com/watch?v=5L7IgdJuKLQ" type="video/mp4">
+
+        </video>
+        
     </section>
+
+    <section class="audio">
+        <audio controls>
+            <source src="./one.mp3" type="audio/ogg">
+        </audio>
+
+    </section>
+
+    <section class="canvas">
+
+        <canvas id="canvas">
+            Your browser does not support the canvas tag.
+        </canvas>
+    </section>
+
+
+    <section id="getLocation">
+        <h1>Find your Current location</h1>  
+        <button onclick="getlocation()">Click me</button>  
+        <div id="location"></div>  
+        <script>  
+            var x= document.getElementById("location");  
+            function getlocation() {  
+                if(navigator.geolocation){  
+                    navigator.geolocation.getCurrentPosition(showPosition)  
+                  }  
+                else  
+                {  
+                     alert("Sorry! your browser is not supporting")  
+                 } }  
+               
+             function showPosition(position){  
+               var x = "Your current location is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " +    position.coords.longitude + ")";  
+                        document.getElementById("getLocation").innerHTML = x;  
+             }  
+        </script>  
+    </section>
+        
+        
 
 </body>
 </html>
