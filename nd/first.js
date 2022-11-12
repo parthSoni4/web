@@ -1,15 +1,19 @@
 var http=require("http");
 var dt=require("./firstmodule");
 var url=require("url");
+var fs=require("fs");
 
 http.createServer(function (req,res){
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    // res.write("\n The date and Time are currently  \n"+dt.myDateTime());
-    // res.write(req.url);
-    var q=url.parse(req.url,true).query;
-    var txt=q.year+" "+q.month;
+    fs.readFile('first.html',function(err,data){
 
-    res.end(txt);
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        // res.write("\n The date and Time are currently  \n"+dt.myDateTime());
+        // res.write(req.url);
+        // var q=url.parse(req.url,true).query;
+        // var txt=q.year+" "+q.month;
+        res.write(data);  
+        return res.end();
+    })
 
 }).listen(8000);
 // require is used to include a module
@@ -20,3 +24,4 @@ http.createServer(function (req,res){
 // we should include an http header with correct content type
 // request from the client is in form of object "req"
 // object req has property called "url".
+
