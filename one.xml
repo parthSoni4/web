@@ -1,0 +1,27 @@
+<?xml version="1.0"  encoding="UTF-8"?>
+<!DOCTYPE available SYSTEM "available.dtd">
+<?xml-stylesheet type="text/xsl" href="one.xsl"?>
+
+<available xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="https://www.w3schools.com/xml one.xsd">
+<destination>
+<city> Udaipur</city>
+<state> rajastha45n </state>
+<pincode> 313001 </pincode>
+<stars> 5 </stars>
+<hotelName> Udai villas</hotelName>
+<pool>yes</pool>
+
+</destination>
+
+<destination>
+<city> jaipur</city>
+<state> rajasthan </state>
+<pincode> 313089 </pincode>
+<stars> 5 </stars>
+<hotelName> Ram villas</hotelName>
+<pool>yes</pool>
+
+</destination>
+
+</available>

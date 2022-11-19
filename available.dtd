@@ -1,0 +1,9 @@
+<!DOCTYPE available
+[
+<!ELEMENT available (city,state,pincode,pool,stars,hotelName)>
+<!ELEMENT city (#PCDATA)>
+<!ELEMENT state (#PCDATA)>
+<!ELEMENT pincode (#PCDATA)>
+<!ELEMENT pool (#PCDATA)>
+<!ELEMENT hotelName (#PCDATA)>
+]>
