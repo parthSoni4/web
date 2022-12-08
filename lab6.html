@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+
+            enter your name
+            <input type="text" id="name">
+            <button onclick="setcookie2()">submit name</button>
+        </div>
+        <div>
+            Enter your age
+            <input type="number" id="age">
+            <button onclick="setcookie3()">submit2</button>
+
+            
+        </div>
+        <div>
+            Enter your profession
+            <input type="text" id="profession">
+            <button onclick="setcookie()">submit3</button>
+        </div>
+        <div>
+            Enter your password
+            <input type="password" id="password">
+            <button onclick="setlocal()">password</button>
+        </div>
+        <div>
+            enter otp
+            <input type="password" id="otp">
+            <button onclick="setsession()">OTP</button>
+        </div>
+        <div>
+            <select id="colour" onchange="choose()">
+                <option value="Select Color">Select Color</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                </select>
+        </div>
+    </form>
+    <div>
+        
+        <button onclick="read()">Read</button>
+        <button onclick="deleteCookie1()">delete</button>
+
+    </div>
+    <div id="read">
+        
+    </div>
+    <script>
+        function deleteCookie1()  
+    {  
+        cookie1=document.cookie;  
+        
+        console.log(cookie1);  
+        document.cookie=cookie1+";max-age=0";  
+        alert("cookie deleted");
+
+    }  
+        var num=1;
+        var one=document.getElementById("read");
+        console.log(one);
+        function read()
+        {
+             var allcookies=document.cookie;
+            console.log(allcookies);
+            var ret;
+            ret="<div> ";
+            var cookie=document.cookie.split(";");
+            for(i=0;i<cookie.length;i++)
+            {
+                ret=ret+i+cookie[i-1]+"<br>";
+            }
+            ret=ret+"</div>";
+            console.log("this is ret",ret);
+            console.log("one",one);
+            one.innerHTML=ret;
+            
+        }
+      
+        function setcookie()
+        {
+            console.log("yes");
+            var c=document.getElementById("profession").value;
+            console.log(c);
+            document.cookie="profession="+c;
+        }
+        function setcookie2()
+        {
+            var a=document.getElementById("name").value;
+            document.cookie="name="+a+"; expires=Thu, 8 Dec 2022 12:20:00 UTC";
+
+        }
+        function setcookie3()
+        {
+            var b=document.getElementById("age").value;
+            document.cookie="age="+b+"; expires=Thu, 8 Dec 2022 12:20:00 UTC";
+
+        }
+        function setlocal()
+        {
+            var d=document.getElementById("password").value;
+            localStorage.setItem(1,d);
+        }
+        function setsession()
+        {
+            var e=document.getElementById("otp").value;
+            sessionStorage.setItem(1,e);
+        }
+
+        function choose()
+        {
+            var value=document.getElementById("colour").value;
+            if(value!="Select Color")
+            {
+                document.bgColor=value;
+                document.cookie="color="+value+";";
+            }
+        }
+    </script>
+</body>
+</html>
