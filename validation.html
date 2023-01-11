@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <form action="">
+        name
+        <input type="text" id="name">
+        <input type="submit" onclick="validate()">
+    </form>
+    <script>
+
+        function validate()
+        {
+            var a=document.getElementById('name').value;
+            var rege=/[a-z]{2}/;
+            if(rege.test(a))
+            {
+                console.log('yes')
+            }
+            else{
+                alert("not possible")
+            }
+        }
+    $('#name').keydown(function(event)
+    {
+        if(event.keyCode>48 && event.keyCode<58)
+        {
+            event.preventDefault();
+        }
+    })
+    </script>
+</body>
+</html>
